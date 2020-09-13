@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    
+
+}
+body{
+    background: #252850;
+    font-family: sans-serif;
+    padding-top: 200px;
+    transition: padding-top 0.5s ease;
+
+}
+
+img{
+	width: 100%;
+}
+
+header{
+    z-index: 10;
+    width: 100%;
+    height: 200px;
+    background: #222629;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s ease ;
+}
+
+header h1{
+    font-size: 42px;
+    color: red;
+    line-height: 100px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+header h1 i{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.redes-sociales a{
+    color: rgb(235, 235, 235);
+    text-align: left;
+    box-shadow: 0 1px 0 rgb(0, 0, 0);
+    font-size: 2rem;
+}
+.enlaces{
+    position: absolute;
+    position: a;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    background: #2d3236;
+}
+.enlaces a{
+    
+    color:red;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header nav a:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+h2{
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 2;
+    color:black;
+
+}
+p{
+    margin-bottom: 2rem;
+    line-height: 2;
+    color:#7f8c8d;
+}
+.wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+}
+section{
+    margin: 20px;
+    padding: 20px;
+    background: #5457f1;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+body.sticky-header{
+    padding-top: 100px;
+}
+body.sticky-header header{
+    height: 60px;
+    background: #e88300;
+}
+body.sticky-header header h1{
+    transform: scale(0,0);
+}
+
+/*PIE DE PAGINA*/
+footer{
+    max-width: 1400px;
+    background: rgb(129, 129, 129);
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    color:rgb(2, 2, 2);
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 10px;
+    margin-top: 20 px;
+    margin-left: 20 px;
+    margin-right: 20 px;
+    margin-bottom: 20px;
+
+
+}
+
+#footer {
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
+    color: #888;
+  }
+  
+  #footer .footer-links a {
+    color: #666;
+    padding-left: 15px;
+  }
+  
+  #footer .footer-links a:first-child {
+    padding-left: 0;
+  }
+  
+  #footer .footer-links a:hover {
+    color: #1dc8cd;
+  }
+
+/**RESERVACIONES**/
+.reservaciones{
+    display: inline-flex;
+    width: 100%;
+    background-color:#2d3236;
+}
+.reservacion{
+    border-color: black;
+    border-width: 1px;
+    border-style: double;
+    padding:10px;
+    background-color:#222629 ;
+    border-style: double;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.pagos{
+    border-color: black;
+    border-width: 1px;
+    padding:10px;
+    background-color: #2d3236 ;
+    border-style: double;
+    width: 40%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px
+
+
+
+}
+.frmpago{
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+p{
+    color: white;
+}
+
+input{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/**INVITADOS**/
+.portafolio{
+	width: 90%;
+	max-width: 1400px;
+	margin: auto;
+}
+
+.portafolio h1{
+	text-align: center;
+	font-size: 38px;
+	margin: 15px 0px 40px;
+}
+
+.portafolio-container{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.portafolio-item{
+    z-index: 5;
+	width: 90%;
+	position: relative;
+	overflow: hidden;
+}
+
+.portafolio-img{
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.portafolio-text{
+	position: absolute;
+	bottom: 0;
+	padding: 20px;
+
+	background: rgba(0,0,0,0.7);
+	color: rgb(255, 255, 255);
+
+	-webkit-transform: translateY(100%);
+
+	-ms-transform: translateY(100%);
+
+	transform: translateY(100%);
+
+	-webkit-transition: all 0.5s ease-out;
+
+	transition: all 0.5s ease-out;
+}
+
+.portafolio-text p{
+	text-align: justify;
+}
+
+.portafolio-item:hover .portafolio-text{
+	-webkit-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	transform: translateY(0%);
+}
+
+.portafolio-item:hover .portafolio-img{
+	-webkit-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+.Pagar {
+    background-color:green;
+ 
+     
+    background-position: left center;
+     
+    padding-left: 17px;
+     
+    width:183px;
+     
+    background-image: url(/src/app/features/img/Pago.jpg);
+     
+    background-repeat: no-repeat;
+     
+    }
+
+    .Eliminar {
+        background-color:red;
+         
+        background-position: left center;
+         
+        padding-left: 17px;
+         
+        width:183px;
+         
+        background-image: url(/src/app/features/img/Pago.jpg);
+         
+        background-repeat: no-repeat;
+         
+        }
+
+

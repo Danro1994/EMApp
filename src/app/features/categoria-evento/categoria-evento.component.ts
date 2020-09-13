@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+import { CategoriasEventoService } from 'src/app/services/categorias-evento.service';
+import { CategoriaEvento } from 'src/app/models/categoriaEvento';
 
 @Component({
   selector: 'app-categoria-evento',
@@ -6,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categoria-evento.component.css']
 })
 export class CategoriaEventoComponent implements OnInit {
+  categoriasEvento: CategoriaEvento[];
 
-  constructor() { }
+  constructor(private _categoriasEventoService: CategoriaEvento) { }
 
-  ngOnInit(): void {
+  ngOnInit() 
+  {
+    this.obtenerCategoriasEvento();
   }
-
+ 
+  obtenerCategoriasEvento()
+  {
+    this._categoriasEventoService.obtenerCategoriasEvento().subscribe(data => 
+      {this._categoriasEventoService=data;
+    });
+  }
 }
