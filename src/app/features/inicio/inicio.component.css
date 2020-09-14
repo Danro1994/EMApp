@@ -124,13 +124,21 @@ footer{
 /**INVITADOS**/
 .cuadro-invitados{
   color: var(--colorTexto);
+  text-align: center;
+  
+}
+
+.invitado img{
+  max-width: 300px;
+  display: block;
+  justify-content: center;
+  border-radius: 5%;
 }
 
 /**TESTIMONIALES**/
 .testimoniales{
   display: block;
   color: white;
-
 }
 
 blockquote, cite{
