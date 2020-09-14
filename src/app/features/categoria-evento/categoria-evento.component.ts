@@ -11,17 +11,16 @@ import { CategoriaEvento } from 'src/app/models/categoriaEvento';
 export class CategoriaEventoComponent implements OnInit {
   categoriasEvento: CategoriaEvento[];
 
-  constructor(private _categoriasEventoService: CategoriaEvento) { }
+  constructor(private _categoriasEventoService: CategoriasEventoService) { }
 
   ngOnInit() 
   {
     this.obtenerCategoriasEvento();
   }
  
-  obtenerCategoriasEvento()
-  {
-    this._categoriasEventoService.obtenerCategoriasEvento().subscribe(data => 
-      {this._categoriasEventoService=data;
+  obtenerCategoriasEvento(){
+    this._categoriasEventoService.obtenerCategoriaEventos().subscribe(data => 
+      {this.categoriasEvento=data;
     });
   }
 }

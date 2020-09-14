@@ -13,7 +13,7 @@ export class CategoriasEventoService {
   {
     return this.http.get<CategoriaEvento[]>(this.apiURL + '/' +id);
   }
-  obtenerCategoriasEvento()
+  obtenerCategoriaEventos()
   {
     return this.http.get<CategoriaEvento[]>(this.apiURL);
   }
