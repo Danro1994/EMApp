@@ -21,8 +21,7 @@
                 <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
             </nav>
         </div>
-        <button type ="button" class="btn btn-success mb-2"(click)="crearUsuario()"><i class="fas fa-plus"></i>
-            Crear Usuario</button>
+
         <h1>EVENTMAKER</h1>
        
     </div>
@@ -30,53 +29,24 @@
 </header>
 
 <body>
-
-
     <div class="cuenta-regresiva">
         <h2>Cuenta Regresiva</h2>
-
-        <div id="Counter"></div>
-        
-        <script>
-        var end = new Date('08/07/2020 03:00 PM');
-        
-            var _second = 1000;
-            var _minute = _second * 60;
-            var _hour = _minute * 60;
-            var _day = _hour * 24;
-            var timer;
-        
-            function showRemaining() {
-                var now = new Date();
-                var distance = end - now;
-                if (distance < 0) {
-        
-                    clearInterval(timer);
-                    document.getElementById('Cuenta_Regresiva').innerHTML = 'EXPIRED!';
-        
-                    return;
-                }
-                var days = Math.floor(distance / _day);
-                var hours = Math.floor((distance % _day) / _hour);
-                var minutes = Math.floor((distance % _hour) / _minute);
-                var seconds = Math.floor((distance % _minute) / _second);
-                
-                document.getElementById('Counter').innerHTML = days + ' dias ';
-                document.getElementById('Counter').innerHTML += hours + ' horas ';
-                document.getElementById('Counter').innerHTML += minutes + ' minutos ';
-                document.getElementById('Counter').innerHTML += seconds + ' segundos';
-            }
-        
-            timer = setInterval(showRemaining, 1000);
-        </script>
-
+        <iframe width="582" height="299" src="https://w2.countingdownto.com/3208698" frameborder="0"></iframe>
     </div>
-   
-
-
 
     <div class="Seccion de Invitados">
         <h2>Seccion de Invitados</h2>
+
+        <div class="container cuadro-invitados">
+            <div class="row">
+              <div class="col"><img src="https://www.elheraldo.hn/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=w1RB6pozOetLy4B9cnd7jM$daE2N3K4ZzOUsqbU5sYsRENqHPzc8Db9e2dy2pHUW6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&CONTENTTYPE=image/jpeg" height="200" width="200" alt="image">DJ Frank</div>
+              <div class="col"><img src="https://www.laprensa.hn/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=qouy6Q7g3Cq3DkvFmsn0G8$daE2N3K4ZzOUsqbU5sYto$gQ9f9aVEHTv86HNplZO6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&CONTENTTYPE=image/jpeg" height="200" width="200" alt="image">Orquesta Delicia</div>
+              <div class="w-100"></div>
+              <div class="col">Column</div>
+              <div class="col">Column</div>
+            </div>
+          </div>
+
     </div>
 
 
