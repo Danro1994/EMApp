@@ -11,10 +11,10 @@ import { NavegacionComponent } from './features/navegacion/navegacion.component'
 import { CrearUsuarioComponent } from './features/crear-usuario/crear-usuario.component';
 import { EditarUsuarioComponent } from './features/editar-usuario/editar-usuario.component';
 import { InicioComponent } from './features/inicio/inicio.component';
-import { InvitadoComponent } from './features/invitado/invitado.component';
 import { CalendarioComponent } from './features/calendario/calendario.component';
-import { CategoriaEventoComponent } from './features/categoria-evento/categoria-evento.component';
-import { EventoComponent } from './features/evento/evento.component';
+import { CategoriasEventoComponent } from './features/categorias-evento/categorias-evento.component';
+import { EventoComponent } from './features/eventos/eventos.component';
+import { InvitadosComponent } from './features/invitados/invitados.component';
 
 @NgModule({
   declarations: [
@@ -26,10 +26,10 @@ import { EventoComponent } from './features/evento/evento.component';
     CrearUsuarioComponent,
     EditarUsuarioComponent,
     InicioComponent,
-    InvitadoComponent,
     CalendarioComponent,
-    CategoriaEventoComponent,
-    EventoComponent
+    CategoriasEventoComponent,
+    EventoComponent,
+    InvitadosComponent
   ],
   imports: [
     BrowserModule,
