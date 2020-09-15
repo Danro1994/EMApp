@@ -30,7 +30,7 @@ html, body{
     --colorSecundario: #096b83;
     --colorFondo: #222629;
     --colorFondoSecundario: #404040;
-    --colorTexto: #10b6df;
+    --colorTexto: white;
     --fuenteTitulos: 'Anton', sans-serif;
   }
 
@@ -50,4 +50,8 @@ h2{
 
 .titulo-tabla{
     color: var(--colorSecundario);
+}
+
+.contenido-tabla{
+    color: white !important;
 }
