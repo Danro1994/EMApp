@@ -4,20 +4,20 @@ import { Usuario } from 'src/app/models/usuario';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-usuario',
-  templateUrl: './usuario.component.html',
-  styleUrls: ['./usuario.component.css']
+  selector: 'app-usuarios',
+  templateUrl: './usuarios.component.html',
+  styleUrls: ['./usuarios.component.css']
 })
-export class UsuarioComponent implements OnInit {
-usuarios:Usuario[];
+export class UsuariosComponent implements OnInit {
+  usuarios:Usuario[];
 
-  constructor(private  _comprasService: UsuariosService, private router: Router) { }
+  constructor(private  _usuariosService: UsuariosService, private router: Router) { }
 
   ngOnInit(): void {
     this.obtenerUsuarios();
   }
   obtenerUsuarios(){
-    this._comprasService.obtenerUsuarios().subscribe(data => 
+    this._usuariosService.obtenerUsuarios().subscribe(data => 
       {this.usuarios=data;
     });
   }
@@ -33,10 +33,9 @@ usuarios:Usuario[];
   {
     const res = confirm("Desea eliminar el usuario?");
     if(res){
-      this._comprasService.eliminarUsuario(id).subscribe(() => {
+      this._usuariosService.eliminarUsuario(id).subscribe(() => {
         this.obtenerUsuarios();
-      })
+      });
     }
   }
-
 }

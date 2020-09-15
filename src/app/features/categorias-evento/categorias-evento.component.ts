@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CategoriaEvento }  from 'src/app/models/categoriaEvento';
-import {Router} from '@angular/router';
 import { CategoriasEventoService } from 'src/app/services/categorias-evento.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-categorias-evento',
@@ -11,7 +11,7 @@ import { CategoriasEventoService } from 'src/app/services/categorias-evento.serv
 export class CategoriasEventoComponent implements OnInit {
   categoriasEvento: CategoriaEvento[];
     
-      constructor(private _categoriasEventoService: CategoriasEventoService) { }
+      constructor(private _categoriasEventoService: CategoriasEventoService, private router: Router) { }
     
       ngOnInit() 
       {
@@ -23,5 +23,21 @@ export class CategoriasEventoComponent implements OnInit {
           {this.categoriasEvento=data;
         });
       }
-    
+      crearCategoriaEvento()
+      {
+        this.router.navigate(['categoriasEvento/crear'])
+      }
+      editarCategoriaEvento(id:Number)
+      {
+       this.router.navigate(['categoriasEvento/editar', id])
+       }
+       eliminarCategoriaEvento(id: Number)
+      {
+         const res = confirm("Desea eliminar el usuario?");
+         if(res){
+         this._categoriasEventoService.eliminarCategoriaEvento(id).subscribe(() => {
+         this.obtenerCategoriasEvento();
+        });
+      }
     }
+  }

@@ -15,12 +15,7 @@ export class InvitadosComponent implements OnInit {
 
   ngOnInit() 
   {
-    this.obtenerInvitados();
+
   }
-  obtenerInvitados()
-  {
-    this._invitadosService.obtenerInvitados().subscribe(data => 
-      {this.invitados=data;
-    });
-  }
+
 }

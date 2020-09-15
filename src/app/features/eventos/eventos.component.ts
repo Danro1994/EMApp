@@ -11,7 +11,7 @@ import { EventosService } from 'src/app/services/eventos.service';
 export class EventoComponent implements OnInit {
 eventos: Evento[];
 
-  constructor(private _eventosService: EventosService) { }
+  constructor(private _eventosService: EventosService, private router: Router) { }
 
   ngOnInit() 
   {
@@ -23,5 +23,21 @@ eventos: Evento[];
       {this.eventos=data;
     });
   }
-
+  crearEvento()
+  {
+    this.router.navigate(['eventos/crear'])
+  }
+  editarEvento(id:Number)
+  {
+   this.router.navigate(['eventos/editar', id])
+   }
+   eliminarEvento(id: Number)
+  {
+     const res = confirm("Desea eliminar el usuario?");
+     if(res){
+     this._eventosService.eliminarEvento(id).subscribe(() => {
+     this.obtenerEventos();
+    });
+  } 
+ }
 }

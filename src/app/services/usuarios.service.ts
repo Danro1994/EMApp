@@ -27,6 +27,6 @@ export class UsuariosService {
   }
   eliminarUsuario(id: Number)
   {
-    return this.http.delete(this.apiURL + "/" + id);
+    return this.http.delete<Usuario>(this.apiURL + "/" + id);
   }
 }
