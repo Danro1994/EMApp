@@ -30,9 +30,9 @@ export class EditarUsuarioComponent implements OnInit {
       this.eventos = res;
     });
 
-    this._usuariosService.obtenerUsuario(id).subscribe(res =>{
+    /*this._usuariosService.obtenerUsuario(id).subscribe(res =>{
       this.usuario = res;
-    });
+    });*/
   }
   editarUsuario()
   {

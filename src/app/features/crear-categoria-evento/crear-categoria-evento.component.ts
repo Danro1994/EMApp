@@ -26,7 +26,7 @@ export class CrearCategoriaEventoComponent implements OnInit {
     })
   }
 
-  crearUsuario()
+  crearCategoriaEvento()
   {
     if(this.categoriaEvento)
     {

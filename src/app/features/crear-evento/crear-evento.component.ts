@@ -13,25 +13,25 @@ import { CategoriasEventoService } from 'src/app/services/categorias-evento.serv
   styleUrls: ['./crear-evento.component.css']
 })
 export class CrearEventoComponent implements OnInit {
-  invitados: Invitado[];
   categoriasEvento: CategoriaEvento[];
+  invitados:Invitado[];
   evento: Evento;
 
   constructor(
-    private _invitadosService: InvitadosService,
-    private _categoriasEventoService: CategoriasEventoService,
-    private _eventosService:EventosService,
+    private _invitadosService:InvitadosService,
+    private _categoriasEventoService:CategoriasEventoService,
+    private _eventosService: EventosService,
     private router: Router) { 
       this.evento = new Evento();
     }
 
   ngOnInit(): void {
-    this._invitadosService.obtenerInvitados().subscribe(res =>{
-      this.invitados = res;
-    })
     this._categoriasEventoService.obtenerCategoriasEvento().subscribe(res =>{
       this.categoriasEvento = res;
-    })
+    });
+    this._invitadosService.obtenerInvitados().subscribe(res =>{
+      this.invitados = res;
+    });
   }
 
   crearEvento()
