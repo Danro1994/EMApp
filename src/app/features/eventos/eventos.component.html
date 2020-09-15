@@ -8,6 +8,7 @@
             <th scope="col">Nombre </th>
             <th scope="col">Lugar</th>
             <th scope="col">Precio</th>
+            <th scope="col">Fecha</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
@@ -17,6 +18,7 @@
             <th scope="row">{{evento.nombre_evento}}</th>
             <th scope="row">{{evento.lugar}}</th>
             <th scope="row">{{evento.precio}}</th>
+            <th scope="row">{{evento.fecha}}</th>
             <td>
                 <div class="btn-group" role="group">
                 <button type="button" class="btn btn-info" (click)="editarUsuario(usuario.id)">
