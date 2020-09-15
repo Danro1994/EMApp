@@ -1,8 +1,8 @@
-<h1>Listado de Usuarios</h1>
+<h1>Usuarios</h1>
 <button type ="button" class="btn btn-success mb-2" (click)="crearUsuario()"><i class="fas fa-plus"></i>
     Crear</button>
 <table class="table table-striped">
-    <thead>
+    <thead class="titulo-tabla">
         <tr>
             <th scope="col">#</th>
             <th scope="col">Nombre </th>
@@ -11,7 +11,7 @@
             <th scope="col">Acciones</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="contenido-tabla">
        <tr *ngFor="let usuario of usuarios">
             <th scope="row">{{usuario.id}}</th>
             <th scope="row">{{usuario.nombre_usuario}}</th>
