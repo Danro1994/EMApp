@@ -21,14 +21,17 @@ export class UsuariosComponent implements OnInit {
       {this.usuarios=data;
     });
   }
+
   crearUsuario()
   {
     this.router.navigate(['/usuarios/crear'])
   }
+
   editarUsuario(id:Number)
   {
     this.router.navigate(['/usuarios/editar', id])
   }
+  
   eliminarUsuario(id: Number)
   {
     const res = confirm("Desea eliminar el usuario?");
