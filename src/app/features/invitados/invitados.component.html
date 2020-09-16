@@ -13,94 +13,38 @@
 </head>
 
 
-
-<header>
-    <h1>BIENVENIDO A <i>EVENTMAKER</i>   </h1>
-    <nav class="redes-sociales">
-        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
-        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-    </nav>    
-</header>
-
 <body>
-    
-    <section class="portafolio">
-		<h1>Nuestros Invitados</h1>
-		<div class="portafolio-container">
-			<section class="portafolio-item">
-				<img src="img/1.jpg" alt="" class="portafolio-img">
-				<section class="portafolio-text">
-				<h2>Invitado1</h2>
-				<p></p>
-			  </section>
-      </section>
-    
-		  <section class="portafolio-item">
-			  <img src="img/2.jpg" alt="" class="portafolio-img">
-			  <section class="portafolio-text">
-				<h2>Invitado2</h2>
-				<p></p>
-			  </section>
-      </section>
-    
-		  <section class="portafolio-item">
-		    <img src="img/3.jpg" alt="" class="portafolio-img">
-			  <section class="portafolio-text">
-			  <h2>Invitado3</h2>
-			  <p></p>
-		    </section>
-		  </section>
-		</div>
-	  </section>
-
-
-<div class= "invitar">
-<h2>Invitar amigos</h2>
-<table class="table table-striped">
-  <thead class="titulo-tabla">
-      <tr>
-          <th scope="col">#</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Apellido</th>
-          <th scope="col">Descripcion</th>
-          <th scope="col">URL</th>
-          <th scope="col">Acciones</th>
-      </tr>
-  </thead>
-  <tbody class="contenido-tabla">
-     <tr *ngFor="let invitado of invitados">
-          <th scope="row">{{invitado.id}}</th>
-          <td>{{invitado.nombre_invitado}}</td>
-          <td>{{invitado.apellido_invitado}}</td>
-          <td>{{invitado.descripcion}}</td>
-          <td>{{invitado.url_image}}</td>
-          <td>
-              <div class="btn-group" role="group">
-              <button type="button" class="btn btn-info" (click)="editarCarro(carro.id)">
-              <i class="fas fa-pencil-alt"></i></button>
-              <button type="button" class="btn btn-danger" (click)="eliminarCarro(carro.id)"> 
-              <i class="fas fa-trash-alt"></i></button>       
-              </div>
-          </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-
-<div class= "Amigos">
-<h2>Ver amigos</h2>
-</div>
-
-
-<div class= "Seguidores">
-<h2>Seguidores</h2>
-</div>
-
-
+  <table class="table table-striped">
+    <thead class="titulo-tabla">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">URL</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody class="contenido-tabla">
+      <tr *ngFor="let invitado of invitados">
+            <th scope="row">{{invitado.id}}</th>
+            <td>{{invitado.nombre_invitado}}</td>
+            <td>{{invitado.apellido_invitado}}</td>
+            <td>{{invitado.descripcion}}</td>
+            <td>{{invitado.url_image}}</td>
+            <td>
+                <div class="btn-group" role="group">
+                <button type="button" class="btn btn-info" (click)="editarCarro(carro.id)">
+                <i class="fas fa-pencil-alt"></i></button>
+                <button type="button" class="btn btn-danger" (click)="eliminarCarro(carro.id)"> 
+                <i class="fas fa-trash-alt"></i></button>       
+                </div>
+            </td>
+        </tr>
+    </tbody>
+  </table>
 </body>
+
 
   <footer id="footer">
     <div class="container">
@@ -120,7 +64,6 @@
             <a href="invitados.html" class="scrollto">Invitados</a>
             <a href="Calendario.html">Calendario</a>
             <a href="Reservacion.html">Reservacion</a>
-            <a href="#">Contactos</a>
           </nav>
         </div>
       </div>

@@ -48,10 +48,61 @@ h2{
   font-size: 3rem;
 }
 
+
+
 .titulo-tabla{
     color: var(--colorSecundario);
 }
 
 .contenido-tabla{
     color: white !important;
+}
+
+.etiquetas{
+  color: white !important;
+}
+
+
+.seccion-invitados{
+  padding-top: 20px;
+}
+
+.cuadro-invitados{
+  color: var(--colorTexto);
+  text-align: center;
+  
+}
+
+.invitado img{
+  max-width: 300px;
+  display: block;
+  justify-content: center;
+  border-radius: 5%;
+}
+
+#footer {
+  border-radius: 0 0 20px 20px;
+  background:var(--colorSecundario);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+#footer .credits {
+  font-size: 13px;
+  color: white;
+}
+
+#footer .footer-links a {
+  color: white;
+  padding-left: 15px;
+}
+
+#footer .footer-links a:first-child {
+  padding-left: 0;
+}
+
+#footer .footer-links a:hover {
+  color: #1dc8cd;
 }

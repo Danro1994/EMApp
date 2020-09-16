@@ -39,7 +39,9 @@ export class EditarEventoComponent implements OnInit {
    this._eventosService.obtenerEvento(id).subscribe(res =>{
       this.evento = res;
     });
-  }
+  } 
+
+
   editarEvento()
   {
     this._eventosService.editarEvento(this.evento)
@@ -47,6 +49,8 @@ export class EditarEventoComponent implements OnInit {
       this.router.navigate(['/eventos']);
     })
   }
+
+
   cancelar()
   {
     this.router.navigate(['/eventos'])
