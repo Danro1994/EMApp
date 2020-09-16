@@ -5,18 +5,20 @@ import {HttpClient} from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+
 export class UsuariosService {
   apiURL='https://localhost:44302/api/Usuario ';
 
   constructor(private http: HttpClient) { }
-  obtenerUsuario(id:Number)
-  {
-    return this.http.get<Usuario[]>(this.apiURL + '/' +id);
-  }
   obtenerUsuarios()
   {
     return this.http.get<Usuario[]>(this.apiURL);
   }
+  obtenerUsuario(id:Number)
+  {
+    return this.http.get<Usuario[]>(this.apiURL + '/' +id);
+  }
+ 
   crearUsuario(usuario: Usuario)
   {
     return this.http.post<Usuario>(this.apiURL, usuario);

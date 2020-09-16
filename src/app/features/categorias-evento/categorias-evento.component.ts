@@ -33,7 +33,7 @@ export class CategoriasEventoComponent implements OnInit {
        }
        eliminarCategoriaEvento(id: Number)
       {
-         const res = confirm("Desea eliminar el usuario?");
+         const res = confirm("Desea eliminar la Categoria del Evento?");
          if(res){
          this._categoriasEventoService.eliminarCategoriaEvento(id).subscribe(() => {
          this.obtenerCategoriasEvento();

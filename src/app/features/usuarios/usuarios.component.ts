@@ -26,19 +26,17 @@ export class UsuariosComponent implements OnInit {
   {
     this.router.navigate(['/usuarios/crear'])
   }
-
   editarUsuario(id:Number)
   {
-    this.router.navigate(['/usuarios/editar', id])
-  }
-  
-  eliminarUsuario(id: Number)
+   this.router.navigate(['/usuarios/editar', id])
+   }
+   eliminarUsuario(id: Number)
   {
-    const res = confirm("Desea eliminar el usuario?");
-    if(res){
-      this._usuariosService.eliminarUsuario(id).subscribe(() => {
-        this.obtenerUsuarios();
-      });
-    }
+     const res = confirm("Desea eliminar el usuario?");
+     if(res){
+     this._usuariosService.eliminarUsuario(id).subscribe(() => {
+     this.obtenerUsuarios();
+    });
   }
+}
 }

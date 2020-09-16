@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router,ActivatedRoute } from '@angular/router';
-import { EventosService } from 'src/app/services/eventos.service';
-import { Evento } from 'src/app/models/evento';
+import { ComprasService } from 'src/app/services/compras.service';
+import { Compra } from 'src/app/models/compra';
 import { Usuario } from 'src/app/models/usuario';
 import { UsuariosService } from 'src/app/services/usuarios.service';
 
@@ -11,11 +11,11 @@ import { UsuariosService } from 'src/app/services/usuarios.service';
   styleUrls: ['./editar-usuario.component.css']
 })
 export class EditarUsuarioComponent implements OnInit {
-  eventos: Evento[];
+  compras: Compra[];
   usuario: Usuario;
-  ;
+  
   constructor(
-    private _eventosService: EventosService,
+    private _comprasService: ComprasService,
     private _usuariosService: UsuariosService,
     private router: Router,
     private route: ActivatedRoute) {
@@ -26,13 +26,13 @@ export class EditarUsuarioComponent implements OnInit {
 
     const id = +this.route.snapshot.paramMap.get("id");
 
-    this._eventosService.obtenerEventos().subscribe(res =>{
-      this.eventos = res;
+    this._comprasService.obtenerCompras().subscribe(res =>{
+      this.compras = res;
     });
-
-    /*this._usuariosService.obtenerUsuario(id).subscribe(res =>{
+   
+   this._usuariosService.obtenerUsuario(id).subscribe(res =>{
       this.usuario = res;
-    });*/
+    });
   }
   editarUsuario()
   {
@@ -45,5 +45,4 @@ export class EditarUsuarioComponent implements OnInit {
   {
     this.router.navigate(['/usuarios'])
   }
-
 }

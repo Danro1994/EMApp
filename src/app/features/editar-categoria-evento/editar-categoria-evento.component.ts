@@ -30,11 +30,11 @@ export class EditarCategoriaEventoComponent implements OnInit {
       this.eventos = res;
     });
 
-   /*this._categoriaEventoService.obtenerCategoriaEvento(id).subscribe(res =>{
+   this._categoriaEventoService.obtenerCategoriaEvento(id).subscribe(res =>{
       this.categoriaEvento = res;
-    });*/
+    });
   }
-  editarUsuario()
+  editarCategoriaEvento()
   {
     this._categoriaEventoService.editarCategoriaEvento(this.categoriaEvento)
     .subscribe(() => {
