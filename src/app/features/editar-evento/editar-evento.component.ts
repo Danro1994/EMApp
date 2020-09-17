@@ -36,9 +36,9 @@ export class EditarEventoComponent implements OnInit {
     this._invitadosEventoService.obtenerInvitados().subscribe(res =>{
       this.invitados = res;
     });
-   this._eventosService.obtenerEvento(id).subscribe(res =>{
+  /* this._eventosService.obtenerEvento(id).subscribe(res =>{
       this.evento = res;
-    });
+    });*/
   } 
 
 
