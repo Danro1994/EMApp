@@ -26,13 +26,13 @@ export class EditarCategoriaEventoComponent implements OnInit {
 
     const id = +this.route.snapshot.paramMap.get("id");
 
-    this._eventosService.obtenerEventos().subscribe(res =>{
+    this._eventosService.obtenerEventos2().subscribe(res =>{
       this.eventos = res;
     });
 
-   this._categoriaEventoService.obtenerCategoriaEvento(id).subscribe(res =>{
+   /*this._categoriaEventoService.obtenerCategoriaEvento(id).subscribe(res =>{
       this.categoriaEvento = res;
-    });
+    });*/
   }
   editarCategoriaEvento()
   {

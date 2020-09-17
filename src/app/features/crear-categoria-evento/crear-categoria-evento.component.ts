@@ -21,7 +21,7 @@ export class CrearCategoriaEventoComponent implements OnInit {
     }
 
   ngOnInit(): void {
-    this._eventosService.obtenerEventos().subscribe(res =>{
+    this._eventosService.obtenerEventos2().subscribe(res =>{
       this.eventos = res;
     })
   }

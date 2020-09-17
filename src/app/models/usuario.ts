@@ -4,5 +4,5 @@ export class Usuario {
     apellido_usuario:String;
     edad:Number;
     correo_electronico:String;
-    fecha:Date
+    fecha:Date;
 }
