@@ -20,6 +20,10 @@ import { EditarUsuario2Component } from './features/editar-usuario2/editar-usuar
 import { CrearEvento2Component } from './features/crear-evento2/crear-evento2.component';
 import { EditarEvento2Component } from './features/editar-evento2/editar-evento2.component';
 import { Eventos2Component } from './features/eventos2/eventos2.component';
+import { CrearCompraComponent } from './features/crear-compra/crear-compra.component';
+import { EditarCompraComponent } from './features/editar-compra/editar-compra.component';
+import { EditarInvitadoComponent } from './features/editar-invitado/editar-invitado.component';
+import { CrearInvitadoComponent } from './features/crear-invitado/crear-invitado.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,11 @@ import { Eventos2Component } from './features/eventos2/eventos2.component';
     EditarUsuario2Component,
     CrearEvento2Component,
     EditarEvento2Component,
-    Eventos2Component
+    Eventos2Component,
+    CrearCompraComponent,
+    EditarCompraComponent,
+    EditarInvitadoComponent,
+    CrearInvitadoComponent,
   ],
   imports: [
     FormsModule,

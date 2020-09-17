@@ -13,4 +13,20 @@ export class ComprasService {
   {
     return this.http.get<Compra[]>(this.apiURL);
   }
+  obtenerCompra(id:Number)
+  {
+    return this.http.get<Compra[]>(this.apiURL + '/' +id);
+  }
+  crearCompra(compra: Compra)
+    {
+      return this.http.post<Compra>(this.apiURL, compra);
+    }
+    editarCompra(compra: Compra)
+    {
+      return this.http.put<Compra>(this.apiURL + '/' + compra.id, compra);
+    }
+  eliminarCompra(id: Number)
+  {
+    return this.http.delete(this.apiURL + "/" + id);
+  }
 }

@@ -14,6 +14,10 @@ import { EditarUsuario2Component } from './features/editar-usuario2/editar-usuar
 import { CrearEvento2Component } from './features/crear-evento2/crear-evento2.component';
 import { EditarEvento2Component } from './features/editar-evento2/editar-evento2.component';
 import { Eventos2Component } from './features/eventos2/eventos2.component';
+import { CrearCompraComponent } from './features/crear-compra/crear-compra.component';
+import { EditarCompraComponent } from './features/editar-compra/editar-compra.component';
+import { CrearInvitadoComponent } from './features/crear-invitado/crear-invitado.component';
+import { EditarInvitadoComponent } from './features/editar-invitado/editar-invitado.component';
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -21,7 +25,12 @@ const routes: Routes = [
   { path: 'usuarios2/crear', component:CrearUsuario2Component },
   { path: 'usuarios2/editar/:id', component:EditarUsuario2Component},
   { path: 'compras', component: CompraComponent },
+  { path: 'compras/crear', component:CrearCompraComponent },
+  { path: 'compras/editar/:id', component:EditarCompraComponent},
   { path: 'invitados', component: InvitadosComponent },
+  { path: 'invitados/crear', component:CrearInvitadoComponent },
+  { path: 'invitados/editar/:id', component:EditarInvitadoComponent},
+  { path: 'eventos2', component: Eventos2Component },
   { path: 'categoriasEvento', component: CategoriasEventoComponent },
   { path: 'categoriasEvento/crear', component:CrearCategoriaEventoComponent },
   { path: 'categoriasEvento/editar/:id', component:EditarCategoriaEventoComponent},
