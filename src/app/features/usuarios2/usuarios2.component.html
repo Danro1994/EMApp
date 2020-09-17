@@ -1,0 +1,32 @@
+<h1>Listado de Usuarios</h1>
+<button type ="button" class="btn btn-success mb-2" (click)="crearUsuario2()"><i class="fas fa-plus"></i>
+    Crear</button>
+<table class="table table-striped">
+    <thead class="titulo-tabla">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre </th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody class="contenido-tabla">
+      <tr *ngFor="let usuario of usuarios">
+            <th scope="row">{{usuario.id}}</th>
+            <td>{{usuario.nombre_usuario}}</td>
+            <td>{{usuario.apellido_usuario}}</td>
+            <td>{{usuario.edad}}</td>
+            <td>{{usuario.correo_electronico}}</td>
+            <td>
+                <div class="btn-group" role="group">
+                <button type="button" class="btn btn-info" (click)="editarUsuario2(usuario.id)">
+                <i class="fas fa-pencil-alt"></i></button>
+                <button type="button" class="btn btn-danger" (click)="eliminarUsuario2(usuario.id)"> 
+                <i class="fas fa-trash-alt"></i></button>       
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

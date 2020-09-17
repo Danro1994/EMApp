@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router,ActivatedRoute } from '@angular/router';
-import { EventosService } from 'src/app/services/eventos.service';
+import { Eventos2Service } from 'src/app/services/eventos2.service';
 import { Evento } from 'src/app/models/evento';
 import { CategoriaEvento } from 'src/app/models/categoriaEvento';
 import { CategoriasEventoService } from 'src/app/services/categorias-evento.service';
@@ -15,7 +15,7 @@ export class EditarCategoriaEventoComponent implements OnInit {
   categoriaEvento: CategoriaEvento;
   ;
   constructor(
-    private _eventosService: EventosService,
+    private _eventosService: Eventos2Service,
     private _categoriaEventoService: CategoriasEventoService,
     private router: Router,
     private route: ActivatedRoute) {
