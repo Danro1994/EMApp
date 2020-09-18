@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router,ActivatedRoute } from '@angular/router';
-import { EventosService } from 'src/app/services/eventos.service';
+import { Eventos2Service } from 'src/app/services/eventos2.service';
 import { Evento } from 'src/app/models/evento';
 import { CategoriaEvento } from 'src/app/models/categoriaEvento';
 import { CategoriasEventoService } from 'src/app/services/categorias-evento.service';
@@ -15,7 +15,7 @@ export class EditarCategoriaEventoComponent implements OnInit {
   categoriaEvento: CategoriaEvento;
   ;
   constructor(
-    private _eventosService: EventosService,
+    private _eventosService: Eventos2Service,
     private _categoriaEventoService: CategoriasEventoService,
     private router: Router,
     private route: ActivatedRoute) {
@@ -26,7 +26,7 @@ export class EditarCategoriaEventoComponent implements OnInit {
 
     const id = +this.route.snapshot.paramMap.get("id");
 
-    this._eventosService.obtenerEventos().subscribe(res =>{
+    this._eventosService.obtenerEventos2().subscribe(res =>{
       this.eventos = res;
     });
 
@@ -34,7 +34,7 @@ export class EditarCategoriaEventoComponent implements OnInit {
       this.categoriaEvento = res;
     });*/
   }
-  editarUsuario()
+  editarCategoriaEvento()
   {
     this._categoriaEventoService.editarCategoriaEvento(this.categoriaEvento)
     .subscribe(() => {

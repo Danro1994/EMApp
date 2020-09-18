@@ -13,4 +13,20 @@ export class InvitadosService {
 {
   return this.http.get<Invitado[]>(this.apiURL);
 }
+obtenerInvitado(id:Number)
+{
+  return this.http.get<Invitado[]>(this.apiURL + '/' +id);
+}
+  crearInvitado(invitado: Invitado)
+{
+  return this.http.post<Invitado>(this.apiURL, invitado);
+}
+  editarInvitado(invitado: Invitado)
+{
+  return this.http.put<Invitado>(this.apiURL + '/' + invitado.id, invitado);
+}
+eliminarInvitado(id: Number)
+{
+  return this.http.delete(this.apiURL + "/" + id);
+}
 }

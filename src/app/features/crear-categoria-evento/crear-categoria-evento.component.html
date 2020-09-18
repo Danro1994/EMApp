@@ -1,16 +1,18 @@
 <h2>Crear Categoria Evento</h2>
 <form>
-    <div class="form-group">
-        <label for="categoria_eventoCategoriaEvento">Nombre de la Categoria</label>
-        <input name="nombre" type="text" class="form-control" id="categoria_eventoCategoriaEvento"
-        placeholder="Ingresar el Nombre de la Categoria" [(ngModel)]="categoriaEvento.categoria_evento">
+    <div class="form-row">
+        <div class="form-group col-5">
+            <label for="categoria_eventoCategoriaEvento">Nombre de la Categoria</label>
+            <input name="nombre" type="text" class="form-control" id="categoria_eventoCategoriaEvento"
+            placeholder="Ingresar el Nombre de la Categoria" [(ngModel)]="categoriaEvento.categoria_evento">
+        </div>
+        <div class="form-group col-5 padding-50b">
+            <label for="iconoCategoriaEvento">Nombre de la Categoria</label>
+            <input name="nombre" type="text" class="form-control" id="iconoCategoriaEvento"
+            placeholder="Ingresar el Tamaño del Evento" [(ngModel)]="categoriaEvento.icono">
+        </div> 
     </div>
-    <div class="form-group">
-        <label for="iconoCategoriaEvento">Nombre de la Categoria</label>
-        <input name="nombre" type="text" class="form-control" id="iconoCategoriaEvento"
-        placeholder="Ingresar el Tamaño del Evento" [(ngModel)]="categoriaEvento.icono">
-    </div>  
     <button type="submit" class="btn btn-primary" (click)="crearCategoriaEvento()">Guardar</button>
-    <button type="submit" class="btn btn-ligth" (click)="cancelar()">Cancelar</button>
+    <button type="submit" class="btn btn-ligth margin-25l" (click)="cancelar()">Cancelar</button>
 </form>
 

@@ -8,18 +8,22 @@ import { AppComponent } from './app.component';
 import { CompraComponent } from './features/compra/compra.component';
 import { PaginaNoSeEncuentraComponent } from './features/pagina-no-se-encuentra/pagina-no-se-encuentra.component';
 import { NavegacionComponent } from './features/navegacion/navegacion.component';
-import { CrearUsuarioComponent } from './features/crear-usuario/crear-usuario.component';
-import { EditarUsuarioComponent } from './features/editar-usuario/editar-usuario.component';
 import { InicioComponent } from './features/inicio/inicio.component';
 import { CalendarioComponent } from './features/calendario/calendario.component';
 import { CategoriasEventoComponent } from './features/categorias-evento/categorias-evento.component';
-import { EventoComponent } from './features/eventos/eventos.component';
 import { InvitadosComponent } from './features/invitados/invitados.component';
-import { UsuariosComponent } from './features/usuarios/usuarios.component';
 import { CrearCategoriaEventoComponent } from './features/crear-categoria-evento/crear-categoria-evento.component';
-import { CrearEventoComponent } from './features/crear-evento/crear-evento.component';
 import { EditarCategoriaEventoComponent } from './features/editar-categoria-evento/editar-categoria-evento.component';
-import { EditarEventoComponent } from './features/editar-evento/editar-evento.component';
+import { Usuarios2Component } from './features/usuarios2/usuarios2.component';
+import { CrearUsuario2Component } from './features/crear-usuario2/crear-usuario2.component';
+import { EditarUsuario2Component } from './features/editar-usuario2/editar-usuario2.component';
+import { CrearEvento2Component } from './features/crear-evento2/crear-evento2.component';
+import { EditarEvento2Component } from './features/editar-evento2/editar-evento2.component';
+import { Eventos2Component } from './features/eventos2/eventos2.component';
+import { CrearCompraComponent } from './features/crear-compra/crear-compra.component';
+import { EditarCompraComponent } from './features/editar-compra/editar-compra.component';
+import { EditarInvitadoComponent } from './features/editar-invitado/editar-invitado.component';
+import { CrearInvitadoComponent } from './features/crear-invitado/crear-invitado.component';
 
 @NgModule({
   declarations: [
@@ -27,18 +31,22 @@ import { EditarEventoComponent } from './features/editar-evento/editar-evento.co
     CompraComponent,
     PaginaNoSeEncuentraComponent,
     NavegacionComponent,
-    CrearUsuarioComponent,
-    EditarUsuarioComponent,
     InicioComponent,
     CalendarioComponent,
     CategoriasEventoComponent,
-    EventoComponent,
     InvitadosComponent,
-    UsuariosComponent,
     CrearCategoriaEventoComponent,
-    CrearEventoComponent,
     EditarCategoriaEventoComponent,
-    EditarEventoComponent
+    Usuarios2Component,
+    CrearUsuario2Component,
+    EditarUsuario2Component,
+    CrearEvento2Component,
+    EditarEvento2Component,
+    Eventos2Component,
+    CrearCompraComponent,
+    EditarCompraComponent,
+    EditarInvitadoComponent,
+    CrearInvitadoComponent,
   ],
   imports: [
     FormsModule,

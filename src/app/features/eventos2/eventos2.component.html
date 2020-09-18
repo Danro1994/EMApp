@@ -1,32 +1,41 @@
-<h1>Categoria de Eventos</h1>
-<button type ="button" class="btn btn-success mb-2" (click)="crearCategoriaEvento()"><i class="fas fa-plus"></i>
+<h1>Listado de Eventos</h1>
+<button type ="button" class="btn btn-success mb-2" (click)="crearEvento2()"><i class="fas fa-plus"></i>
     Crear</button>
 <table class="table table-striped">
     <thead class="titulo-tabla">
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Categoria </th>
-            <th scope="col">Tamaño</th>
+            <th scope="col">Nombre </th>
+            <th scope="col">Lugar</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Fecha </th>
+            <th scope="col">Clave</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Invitado</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
     <tbody class="contenido-tabla">
-     <tr *ngFor="let categoriaEvento of categoriasEvento">
-            <th scope="row">{{categoriaEvento.id}}</th>
-            <th scope="row">{{categoriaEvento.categoria_evento}}</th>
-            <th scope="row">{{categoriaEvento.icono}}</th>
+          <tr *ngFor="let evento of eventos">
+            <th scope="row">{{evento.id}}</th>
+            <td>{{evento.nombre_evento}}</td>
+            <td>{{evento.lugar}}</td>
+            <td>{{evento.precio}}</td>
+            <td>{{evento.fecha}}</td>
+            <td>{{evento.clave}}</td>
+            <td>{{evento.categoriaEvento.categoria_evento}}</td>
+            <td>{{evento.invitado.nombre_invitado}}</td>
             <td>
                 <div class="btn-group" role="group">
-                <button type="button" class="btn btn-info" (click)="editarCategoriaEvento(categoriaEvento.id)">
+                <button type="button" class="btn btn-info" (click)="editarEvento2(evento.id)">
                 <i class="fas fa-pencil-alt"></i></button>
-                <button type="button" class="btn btn-danger" (click)="eliminarCategoriaEvento(categoriaEvento.id)"> 
+                <button type="button" class="btn btn-danger" (click)="eliminarEvento2(evento.id)"> 
                 <i class="fas fa-trash-alt"></i></button>       
                 </div>
             </td>
         </tr>
     </tbody>
 </table>
-
 <footer id="footer" class="fixed-bottom">
   <div class="container">
     <div class="row">
@@ -50,4 +59,3 @@
     </div>
   </div>
 </footer>
-
