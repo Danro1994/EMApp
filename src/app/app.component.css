@@ -48,8 +48,6 @@ h2{
   font-size: 3rem;
 }
 
-
-
 .titulo-tabla{
     color: var(--colorSecundario);
 }
@@ -73,11 +71,8 @@ h2{
   
 }
 
-.invitado img{
-  max-width: 300px;
-  display: block;
-  justify-content: center;
-  border-radius: 5%;
+.invitado{
+  max-height: 450px;
 }
 
 #footer {
@@ -105,4 +100,16 @@ h2{
 
 #footer .footer-links a:hover {
   color: #1dc8cd;
+}
+
+label{
+  color: white;
+}
+
+.padding-50b{
+  padding-bottom: 50px;
+}
+
+.margin-25l{
+  margin-left: 25px;
 }

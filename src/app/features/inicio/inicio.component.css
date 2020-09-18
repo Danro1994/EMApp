@@ -1,6 +1,7 @@
 /** HEADER **/
 .hero{
   background-image: url(../img/cover3.jpg);
+  background-color: black;
   height: 100vh;
   background-position: top center;
   background-size: cover; 
@@ -39,4 +40,8 @@ header .hero {
 
 .seccion-invitados{
   padding-bottom: 50px;
+}
+
+.margin-75{
+  padding-top: 75px;
 }
