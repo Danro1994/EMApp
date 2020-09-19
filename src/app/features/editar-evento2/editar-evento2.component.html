@@ -8,7 +8,7 @@
         </div>
         <div class="form-group col-5">
             <label for="lugarEvento">Lugar del Evento</label>
-            <input name="nombre" type="text" class="form-control" id="lugarEvento"
+            <input name="lugar" type="text" class="form-control" id="lugarEvento"
             placeholder="Ingrese el Lugar del Evento" [(ngModel)]="evento.lugar">
         </div>
     </div>
@@ -16,17 +16,17 @@
     <div class="form-row">
         <div class="form-group col-4">
             <label for="precioEvento">Precio del Evento</label>
-            <input name="nombre" type="text" class="form-control" id="precioEvento"
+            <input name="precio" type="text" class="form-control" id="precioEvento"
             placeholder="Ingrese el Precio del Evento" [(ngModel)]="evento.precio">
         </div>
         <div class="form-group col-4">
             <label for="fechaEvento">Fecha del Evento</label>
-            <input name="nombre" type="text" class="form-control" id="fechaEvento"
+            <input name="fecha" type="text" class="form-control" id="fechaEvento"
             placeholder="Ingrese la Fecha del Evento" [(ngModel)]="evento.fecha">
         </div>
         <div class="form-group col-2">
             <label for="claveEvento">Clave del Evento</label>
-            <input name="nombre" type="text" class="form-control" id="claveEvento"
+            <input name="clave" type="text" class="form-control" id="claveEvento"
             placeholder="Ingrese el Clave del Evento" [(ngModel)]="evento.clave">
         </div>
     </div>
@@ -34,13 +34,13 @@
     <div class="form-row padding-50b">
         <div class="form-group col-5">
             <label for="categoriaEventoControlSelect">Selecionar la Categoria del Evento</label>
-            <select name="nombreCurso" class="form-control" id="categoriaEventoControlSelect" [(ngModel)]="evento.categoriaEventoid">
+            <select name="categoria" class="form-control" id="categoriaEventoControlSelect" [(ngModel)]="evento.categoriaEventoid">
             <option *ngFor="let categoriaEvento of categoriasEvento" [value]="categoriaEvento.id">{{categoriaEvento.categoria_evento}}</option>
             </select>
         </div>
         <div class="form-group col-5">
             <label for="invitadoControlSelect">Selecionar el Invitado del Evento</label>
-            <select name="nombreCurso" class="form-control" id="invitadoControlSelect" [(ngModel)]="evento.invitadoid">
+            <select name="invitado" class="form-control" id="invitadoControlSelect" [(ngModel)]="evento.invitadoid">
             <option *ngFor="let invitado of invitados" [value]="invitado.id">{{invitado.nombre_invitado}}</option>
             </select>
         </div>
