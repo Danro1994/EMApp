@@ -11,11 +11,11 @@ import { Usuarios2Service } from 'src/app/services/usuarios2.service';
   styleUrls: ['./editar-usuario2.component.css']
 })
 export class EditarUsuario2Component implements OnInit {
-  compras: Compra[];
+  //compras: Compra[];
   usuario: Usuario;
 
   constructor(
-    private _comprasService: ComprasService,
+    //private _comprasService: ComprasService,
     private _usuarios2Service: Usuarios2Service,
     private router: Router,
     private route: ActivatedRoute) {
@@ -23,15 +23,15 @@ export class EditarUsuario2Component implements OnInit {
      }
 
   ngOnInit() {
-    const id = +this.route.snapshot.paramMap.get("id");
+    const id = +this.route.snapshot.paramMap.get('id');
 
-    this._comprasService.obtenerCompras().subscribe(res =>{
+    /*this._comprasService.obtenerCompras().subscribe(res =>{
       this.compras = res;
-    })
-
-    /*this._usuarios2Service.obtenerUsuario2(id).subscribe(res =>{
-      this.usuario = res;
     })*/
+
+    this._usuarios2Service.obtenerUsuario2(id).subscribe(res =>{
+      this.usuario = res;
+    });
   }
   editarUsuario2()
   {

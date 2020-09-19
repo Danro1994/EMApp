@@ -17,6 +17,7 @@ export class Usuarios2Component implements OnInit {
     this.obtenerUsuarios2();
 
   }
+
   obtenerUsuarios2()
   {
     this._usuarios2Service.obtenerUsuarios2().subscribe(data => 
@@ -29,7 +30,7 @@ export class Usuarios2Component implements OnInit {
   }
   editarUsuario2(id:Number)
   {
-    this.router.navigate(['/usuarios2/editar', id])
+    this.router.navigate(['/usuarios2/editar', id]);
   }
   eliminarUsuario2(id: Number)
   {

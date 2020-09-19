@@ -15,7 +15,7 @@ export class InvitadosService {
 }
 obtenerInvitado(id:Number)
 {
-  return this.http.get<Invitado[]>(this.apiURL + '/' +id);
+  return this.http.get<Invitado>(this.apiURL + '/' +id);
 }
   crearInvitado(invitado: Invitado)
 {

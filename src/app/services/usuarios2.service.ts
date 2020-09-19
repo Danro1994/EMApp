@@ -15,7 +15,7 @@ export class Usuarios2Service {
     }
     obtenerUsuario2(id:Number)
     {
-      return this.http.get<Usuario[]>(this.apiURL + '/' +id);
+      return this.http.get<Usuario>(this.apiURL + '/' +id);
     }
     crearUsuario2(usuario: Usuario)
     {

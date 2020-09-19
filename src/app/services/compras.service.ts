@@ -15,7 +15,7 @@ export class ComprasService {
   }
   obtenerCompra(id:Number)
   {
-    return this.http.get<Compra[]>(this.apiURL + '/' +id);
+    return this.http.get<Compra>(this.apiURL + '/' +id);
   }
   crearCompra(compra: Compra)
     {

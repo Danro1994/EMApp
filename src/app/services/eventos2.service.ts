@@ -11,7 +11,7 @@ export class Eventos2Service {
   constructor(private http: HttpClient) { }
   obtenerEvento2(id:Number)
   {
-    return this.http.get<Evento[]>(this.apiURL + '/' +id);
+    return this.http.get<Evento>(this.apiURL + '/' +id);
   }
   obtenerEventos2()
     {

@@ -11,7 +11,7 @@ export class CategoriasEventoService {
   constructor(private http: HttpClient) { }
   obtenerCategoriaEvento(id:Number)
   {
-    return this.http.get<CategoriaEvento[]>(this.apiURL + '/' +id);
+    return this.http.get<CategoriaEvento>(this.apiURL + '/' +id);
   }
   obtenerCategoriasEvento()
   {
