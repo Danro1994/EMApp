@@ -34,9 +34,9 @@ export class EditarCompraComponent implements OnInit {
     this._eventos2Service.obtenerEventos2().subscribe(res =>{
       this.eventos = res;
     });
-   /* this._comprasService.obtenerCompra(id).subscribe(res =>{
+    this._comprasService.obtenerCompra(id).subscribe(res =>{
       this.compra = res;
-    })*/
+    })
   }
   editarCompra()
   {
