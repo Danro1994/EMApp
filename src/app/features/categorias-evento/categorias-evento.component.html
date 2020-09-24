@@ -14,7 +14,7 @@
      <tr *ngFor="let categoriaEvento of categoriasEvento">
             <th scope="row">{{categoriaEvento.id}}</th>
             <th scope="row">{{categoriaEvento.categoria_evento}}</th>
-            <th scope="row">{{categoriaEvento.icono}}</th>
+            <th scope="row">{{categoriaEvento.tamano}}</th>
             <td>
                 <div class="btn-group" role="group">
                 <button type="button" class="btn btn-info" (click)="editarCategoriaEvento(categoriaEvento.id)">

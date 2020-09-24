@@ -22,6 +22,11 @@
             <option *ngFor="let evento of eventos" [value]="evento.id">{{evento.nombre_evento}}</option>
             </select>
         </div>
+        <div class="form-group col-3">
+            <label for="cantidadBoletosCompra">Cantidad de Boletos</label>
+            <input name="nombre" type="number" class="form-control" id="cantidadBoletosCompra"
+            placeholder="Ingrese la Cantidad de Boletos" [(ngModel)]="compra.cantidadBoletos">
+        </div>
         <div class="form-group col-5">
             <label for="eventoControlSelect">Lugar del Evento</label>
             <select name="lugarevento" class="form-control" id="eventoControlSelect" [(ngModel)]="compra.eventoid">

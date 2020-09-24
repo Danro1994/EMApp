@@ -9,6 +9,7 @@
             <th scope="col">Apellido</th>
             <th scope="col">Edad</th>
             <th scope="col">Correo</th>
+            <th scope="col">Fecha de Nacimiento</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
@@ -19,6 +20,7 @@
             <td>{{usuario.apellido_usuario}}</td>
             <td>{{usuario.edad}}</td>
             <td>{{usuario.correo_electronico}}</td>
+            <td>{{usuario.fecha_Nacimiento}}</td>
             <td>
                 <div class="btn-group" role="group">
                 <button type="button" class="btn btn-info" (click)="editarUsuario2(usuario.id)">
